@@ -1,24 +1,12 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+https://signoz.io/blog/opentelemetry-ruby/
 
-Things you may want to cover:
+set below in your `.envrc`
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+export OTEL_EXPORTER=otlp
+export OTEL_SERVICE_NAME=RailsApp
+export OTEL_EXPORTER_OTLP_ENDPOINT=http://localhost:4318
+export OTEL_RESOURCE_ATTRIBUTES=application=sparkapp
+```
